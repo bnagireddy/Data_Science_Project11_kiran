@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # STEP 1: Load the dataset
 df = pd.read_csv("youtube.csv", encoding='latin1')
@@ -36,5 +38,4 @@ for col in num_cols:
 
 # STEP 8: Save cleaned data
 df.to_csv("cleaned_youtube.csv", index=False)
-
 print("\n✅ Data cleaning complete. Saved as 'cleaned_youtube.csv'")
